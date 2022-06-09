@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100wh;
+}
+
+.container {
+    width: 800px;
+    background: #ddd;
+    padding: 20px;
+}
+
+.container > h1 {
+    margin-bottom: 0.5em;
+}
+
+.main-image {
+    width: 800px;
+    height: 460px;
+    margin-bottom: 25px;
+}
+
+.main-image > img {
+    border-radius: 10px;
+}
+
+.img-thumb {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.img-thumb > li {
+      /* 6분할 칼럼 (800-25)/6 */
+    width: 129.17px;
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+}
+
+
+.img-thumb > li > img {
+    width: 100%;
+    display: block;
+}
+
+.img-thumb > li:hover {
+    border: 5px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.img-thumb > li:last-child {
+    margin-right: 0;
+}
